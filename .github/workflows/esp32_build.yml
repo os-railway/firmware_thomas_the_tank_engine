@@ -1,4 +1,4 @@
-name: Thomas the tank engine - Build
+name: Thomas the tank engine - Build and Artifact the ESP-IDF Project
 
 on:
   push:
@@ -18,3 +18,11 @@ jobs:
         with:
           esp_idf_version: v5.2
           target: esp32s3
+      - name: Archive build output artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: |
+            build/bootloader/bootloader.bin
+            build/partition_table/partition-table.bin
+            build/${{ github.event.repository.name }}.bin
