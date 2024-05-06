@@ -1,0 +1,14 @@
+# esp-idf
+build/
+sdkconfig
+sdkconfig.old
+
+# They ignored Idea (Webstorm) completely
+.idea/
+
+# However, they kept the following 4 files version controlled
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
