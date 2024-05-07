@@ -26,4 +26,3 @@ jobs:
             build/bootloader/bootloader.bin
             build/partition_table/partition-table.bin
             build/${{ github.event.repository.name }}.bin
-            build/${{ github.event.repository.name }}.elf
