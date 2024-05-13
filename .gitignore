@@ -12,3 +12,4 @@ sdkconfig.old
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+__pycache__
