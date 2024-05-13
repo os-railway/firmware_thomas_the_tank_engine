@@ -7,4 +7,5 @@ cmake_minimum_required(VERSION 3.16)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(firmware_thomas_the_tank_engine)
 
-# idf_build_set_property(COMPILE_OPTIONS "-Wno-error" APPEND)
+idf_build_set_property(COMPILE_OPTIONS "-Werror" APPEND)
+spiffs_create_partition_image(spiffs data FLASH_IN_PROJECT)

@@ -1,0 +1,2 @@
+# FreeRTOS Linux Simulator
+CONFIG_IDF_TARGET="linux"
