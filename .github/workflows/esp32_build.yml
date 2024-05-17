@@ -1,4 +1,4 @@
-name: Thomas the tank engine - Build and Artifact the ESP-IDF Project
+name: Thomas the tank engine - Build the ESP-IDF Project
 
 on:
   push:
