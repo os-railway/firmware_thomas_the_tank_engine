@@ -1,8 +1,8 @@
+#include <esp_chip_info.h>
+#include <esp_flash.h>
+#include <esp_log.h>
 #include <esp_task_wdt.h>
 #include <stdio.h>
-#include "esp_chip_info.h"
-#include "esp_flash.h"
-#include "esp_log.h"
 #include "osr_ble.h"
 #include "sdkconfig.h"
 
@@ -11,7 +11,6 @@
 #define TAG "app"
 
 void esp32_info() {
-  /* Print chip information */
   esp_chip_info_t chip_info;
   uint32_t flash_size;
   esp_chip_info(&chip_info);
