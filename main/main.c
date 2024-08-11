@@ -6,8 +6,6 @@
 #include "osr_ble.h"
 #include "sdkconfig.h"
 
-#include "logger.h"
-
 #define TAG "app"
 
 void esp32_info() {
@@ -41,7 +39,7 @@ void esp32_info() {
 
 void setup() {
   osr_ble_init();
-  log_message("Hello World!");
+  ESP_LOGI(TAG, "Setup done!");
 }
 
 void loop(void* args) {
