@@ -8,8 +8,14 @@ jobs:
   build:
     strategy:
       matrix:
-        idf_ver: [release-v5.0, release-v5.1, release-v5.2]
-        idf_target: [esp32, esp32s3, esp32c3]
+        idf_ver: [release-v5.0, release-v5.1, release-v5.2, release-v5.3]
+        idf_target: [esp32, esp32s3, esp32c3, esp32h2]
+        include:
+          - idf_ver: release-v5.3
+            idf_target: esp32c5
+        exclude:
+          - idf_ver: release-v5.0
+            idf_target: esp32h2
 
     runs-on: ubuntu-latest
 
