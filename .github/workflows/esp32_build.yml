@@ -3,6 +3,7 @@ name: Thomas the tank engine - Build the ESP-IDF Project
 on:
   push:
   pull_request:
+  merge_group:
 
 jobs:
   build:
