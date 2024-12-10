@@ -5,6 +5,7 @@ sdkconfig.old
 
 # They ignored Idea (Webstorm) completely
 .idea/
+.cache/
 
 # However, they kept the following 4 files version controlled
 .vscode/*
