@@ -4,6 +4,8 @@ on:
   push:
   pull_request:
   merge_group:
+  schedule:
+    - cron: "0 5 * * 3"
 
 jobs:
   build:
